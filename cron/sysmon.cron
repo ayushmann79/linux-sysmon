@@ -1,0 +1,23 @@
+# /etc/cron.d/sysmon - scheduled jobs for the sysmon project
+# m  h  dom mon dow  user  command
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=root
+
+# every 5 min : lightweight independent health check (works even if the Python agent dies)
+*/5  *  *  *  *   root  /opt/sysmon/bin/health-check.sh --quiet >> /var/log/sysmon/health-check.log 2>&1
+
+# daily 02:00 : backup (verified + rotated); exit status is mailed on failure
+0    2  *  *  *   root  /opt/sysmon/bin/backup.sh >> /var/log/sysmon/backup-cron.log 2>&1
+
+# daily 06:30 : SSH/auth log analysis; writes report + a blocklist of brute-force IPs
+30   6  *  *  *   root  /opt/sysmon/bin/log-analyzer.py auth --out /var/log/sysmon/reports/auth-daily.txt --blocklist /var/log/sysmon/blocklist.txt >/dev/null
+
+# Sundays 03:30 : housekeeping (temp files, old logs, journal, package cache)
+30   3  *  *  0   root  /opt/sysmon/bin/maintenance.sh >> /var/log/sysmon/maintenance-cron.log 2>&1
+
+# Mondays 04:00 : security audit of users/permissions, only mails when issues are found
+0    4  *  *  1   root  /opt/sysmon/bin/user-manage.sh audit > /var/log/sysmon/reports/user-audit.txt || cat /var/log/sysmon/reports/user-audit.txt
+
+# first of month 05:00 : prove the newest backup can actually be restored
+0    5  1  *  *   root  /opt/sysmon/bin/backup.sh --restore-test >> /var/log/sysmon/backup-cron.log 2>&1

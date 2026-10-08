@@ -1,0 +1,41 @@
+======================================================================
+ SSH / AUTH LOG ANALYSIS   source: /home/kali/Desktop/linux-sysmon/samples/auth.log
+======================================================================
+ Failed logins: 50   unique source IPs: 4   root attempts: 19   sudo failures: 1
+
+-- BRUTE-FORCE SOURCES (>= 5 failures) --------------------
+  IP                 ATTEMPTS  USERS  USERNAMES TRIED
+  185.220.101.47           34      7  admin, oracle, postgres, root, test
+  103.77.12.9              12      1  root
+
+-- MOST TARGETED USERNAMES ----------------------------------------
+  root                    19
+  admin                    8
+  user                     6
+  test                     5
+  ubuntu                   4
+  deploy                   3
+  postgres                 2
+  oracle                   2
+
+-- FAILURES BY HOUR -----------------------------------------------
+  02:00 ############################## 34
+  03:00 ########## 12
+  14:00 ## 3
+  16:00 # 1
+
+-- SUCCESSFUL LOGINS ----------------------------------------------
+  Oct  6 09:01:12  ayush      from 203.0.113.10     via publickey
+  Oct  6 09:40:03  deploy     from 203.0.113.55     via publickey
+  Oct  6 16:02:49  ayush      from 203.0.113.10     via password
+
+-- SUDO USAGE ----------------------------------------------------
+  ayush      x2   /usr/bin/systemctl restart nginx
+  ayush      x1   /usr/bin/apt-get update
+  ayush      x1   /usr/bin/tail -f /var/log/auth.log
+======================================================================
+exit code: 1 (1 = brute-force sources found)
+
+blocklist.txt:
+185.220.101.47
+103.77.12.9

@@ -1,0 +1,14 @@
+2026-10-08 10:59:20 [INFO] dry-run mode: nothing will be changed
+2026-10-08 10:59:20 [INFO] /tmp: 0 file(s) unused for more than 7 days
+2026-10-08 10:59:20 [INFO] /var/tmp: 0 file(s) unused for more than 7 days
+2026-10-08 10:59:20 [INFO] /var/log: 21 rotated log file(s) older than 30 days
+2026-10-08 10:59:21 [INFO] journal usage: 195.7M
+2026-10-08 10:59:21 [DRY] apt-get clean
+2026-10-08 10:59:23 [INFO] apt: 629 package(s) upgradable
+2026-10-08 10:59:23 [INFO] largest directories in /var:
+2026-10-08 10:59:23 [INFO]    573M  /var/lib
+2026-10-08 10:59:23 [INFO]    457M  /var/cache
+2026-10-08 10:59:23 [INFO]    436M  /var/cache/apt
+2026-10-08 10:59:23 [INFO]    198M  /var/log
+2026-10-08 10:59:23 [INFO]    196M  /var/log/journal
+2026-10-08 10:59:23 [INFO] maintenance finished

@@ -1,0 +1,11 @@
+Host      : kali    2026-10-08 10:57:56
+Uptime    : up 10 minutes
+CPU       :   3%  OK   (load 0.71 0.66 0.35 on 2 cores)
+Memory    :  48%  OK
+Disks     :
+   /                         39%  OK
+Zombies   : 0
+OVERALL   : OK
+exit code: 0
+
+2026-10-08 10:57:57 OK - cpu=3% mem=48% disk=39%(/) load=0.65 zombies=0

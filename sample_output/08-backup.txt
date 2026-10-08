@@ -1,0 +1,10 @@
+2026-10-08 10:57:57 [INFO] DRY RUN: would back up <workdir>/data (~0 MiB raw) to <workdir>/backups, keep 7d
+2026-10-08 10:57:57 [INFO] starting backup of <workdir>/data -> backup-kali-20261008-105757.tar.gz
+2026-10-08 10:57:57 [INFO] OK backup-kali-20261008-105757.tar.gz  size=4.0K  files=4  sha256=5c071b31938ac50c...
+2026-10-08 10:57:57 [INFO] rotation: removed 0 old file(s), keeping 7 days
+2026-10-08 10:57:58 [INFO] restore-test OK: backup-kali-20261008-105757.tar.gz -> 2 files extracted and checksum verified
+
+-rw------- 1 root root 222 Oct  8 10:57 backup-kali-20261008-105757.tar.gz
+-rw------- 1 root root 101 Oct  8 10:57 backup-kali-20261008-105757.tar.gz.sha256
+
+5c071b31938ac50ce0073f254ea7a2c22f4e17baf19cf0caaf288ac478ffa440  backup-kali-20261008-105757.tar.gz

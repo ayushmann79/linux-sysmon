@@ -1,0 +1,21 @@
+======================================================================
+ SYSLOG ANALYSIS   source: /home/kali/Desktop/linux-sysmon/samples/syslog   lines: 26
+======================================================================
+  Severity counts: error=16, critical=3, warning=6
+
+-- NOISIEST PROGRAMS ----------------------------------------------
+  nginx                            9
+  cron                             6
+  systemd                          4
+  kernel                           3
+  postgres                         2
+  sshd                             1
+
+-- MOST REPEATED PROBLEM MESSAGES ---------------------------------
+  [error   ] x9    [error] N#N: *N connect() failed (N: Connection refused) while connecting to upstream
+  [warning ] x6    (CRON) warning: timeout waiting for lock N
+  [error   ] x4    app.service: Failed with result 'exit-code'.
+  [error   ] x2    ERROR:  permission denied for table users
+  [critical] x1    [ N.N] Out of memory: Killed process N (java) total-vm:NkB
+  [critical] x1    [ N.N] oom-killer: gfp_mask=N(GFP_HIGHUSER_MOVABLE)
+======================================================================

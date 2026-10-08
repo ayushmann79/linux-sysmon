@@ -1,0 +1,45 @@
+### thresholds lowered to warn=1% crit=2% so the root filesystem looks full
+### dry_run = yes (default): only logs what it WOULD do
+files before: fresh.log old1.log old2.log old3.log 
+==========================================================================
+ SYSMON HEALTH REPORT   host=kali   2026-10-08 10:57:40
+==========================================================================
+ Overall status : CRITICAL    Health score : 30/100
+
+-- DISK ------------------------------------------------------------------
+  MOUNT                 FS        USED%  USAGE                         SIZE  INODE%
+  /                     ext4       38.5  [########............]     78.3 GB   12.1
+
+-- FINDINGS --------------------------------------------------------------
+  [CRITICAL] disk: Disk / is 38.5% (warn 1, crit 2)
+  [WARNING] network: Unexpected port 80 listening on all interfaces
+  [WARNING] network: Unexpected port 5355 listening on all interfaces
+  [CRITICAL] services: Service rsyslog is inactive
+
+-- AUTOMATED ACTIONS -----------------------------------------------------
+  [DRY-RUN] would run: systemctl restart rsyslog
+  [DRY-RUN] disk cleanup: 3 files older than 7d, 585.9 KB
+==========================================================================
+
+### dry_run = no: really deletes files older than 7 days (fresh files are kept)
+==========================================================================
+ SYSMON HEALTH REPORT   host=kali   2026-10-08 10:57:41
+==========================================================================
+ Overall status : CRITICAL    Health score : 30/100
+
+-- DISK ------------------------------------------------------------------
+  MOUNT                 FS        USED%  USAGE                         SIZE  INODE%
+  /                     ext4       38.5  [########............]     78.3 GB   12.1
+
+-- FINDINGS --------------------------------------------------------------
+  [CRITICAL] disk: Disk / is 38.5% (warn 1, crit 2)
+  [WARNING] network: Unexpected port 80 listening on all interfaces
+  [WARNING] network: Unexpected port 5355 listening on all interfaces
+  [CRITICAL] services: Service rsyslog is inactive
+
+-- AUTOMATED ACTIONS -----------------------------------------------------
+  restarted rsyslog -> STILL FAILING: Failed to restart rsyslog.service: Unit rsyslog.service not found.
+  disk cleanup: 3 files older than 7d, 585.9 KB
+==========================================================================
+
+files after:  fresh.log 

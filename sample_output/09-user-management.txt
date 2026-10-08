@@ -1,0 +1,44 @@
+created demo_ops  home=/home/demo_ops (750)  sudo=1  key=installed  password=locked
+USER             UID    SUDO      PASSWORD   SHELL     LAST-LOGIN
+kali             1000   yes       set        zsh       n/a
+splunk           1001   no        locked     bash      n/a
+dev              1002   no        set        bash      n/a
+admin            1003   yes       set        bash      n/a
+deploy           1004   no        set        bash      n/a
+demo_ops         1005   yes       locked     bash      n/a
+
+$ chmod 777 /home/demo_ops   # simulate a mistake
+  [WARN] NOPASSWD sudo rules present: %kali-trusted   ALL=(ALL:ALL) NOPASSWD: ALL;_gvm ALL = NOPASSWD: /usr/sbin/openvas;
+  [WARN] /opt/splunk is 755 - world-accessible (want 750 or 700)
+  [WARN] /home/demo_ops is 777 - world-accessible (want 750 or 700)
+Audit finished: 3 issue(s).
+
+fixed demo_ops: /home/demo_ops -> 750
+locked demo_ops (password + account expired; existing sessions are NOT killed)
+unlocked demo_ops (key-only accounts keep their password locked, which is intended)
+removed demo_ops
+
+==== full audit afterwards ====
+== Accounts ==
+  [ OK ] only root has UID 0
+  [ OK ] no accounts with an empty password
+  members of sudo: kali,admin
+  [WARN] NOPASSWD sudo rules present: %kali-trusted   ALL=(ALL:ALL) NOPASSWD: ALL;_gvm ALL = NOPASSWD: /usr/sbin/openvas;
+  [ OK ] no duplicate UIDs
+== Home directories & SSH keys ==
+  [ OK ] /home/kali is 750
+  [ OK ] /opt/splunk is 750
+  [ OK ] /home/dev is 750
+  [ OK ] /home/admin is 750
+  [ OK ] /home/deploy is 750
+== Critical file permissions ==
+  [ OK ] /etc/passwd is 644
+  [ OK ] /etc/shadow is 640
+  [ OK ] /etc/group is 644
+  [ OK ] /etc/sudoers is 440
+  [ OK ] /etc/ssh/sshd_config is 644
+  [ OK ] no world-writable files in /etc
+== SUID/SGID outside standard locations ==
+  [ OK ] none found
+
+Audit finished: 1 issue(s).

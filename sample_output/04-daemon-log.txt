@@ -1,0 +1,33 @@
+2026-10-08 10:57:44 INFO    sysmon 1.0.0 daemon started (pid 9489, config <workdir>/demo.conf, dry_run=yes)
+2026-10-08 10:57:45 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:45 INFO    status=CRITICAL score=55 cpu=27.2% mem=49.2% findings=3
+2026-10-08 10:57:45 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:45 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:45 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:47 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:47 INFO    status=CRITICAL score=55 cpu=9.9% mem=49.4% findings=3
+2026-10-08 10:57:47 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:47 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:47 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:49 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:49 INFO    status=CRITICAL score=55 cpu=10.3% mem=49.4% findings=3
+2026-10-08 10:57:49 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:49 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:49 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:51 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:51 INFO    status=CRITICAL score=55 cpu=5.3% mem=49.5% findings=3
+2026-10-08 10:57:51 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:51 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:51 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:51 INFO    configuration reloaded (SIGHUP)
+2026-10-08 10:57:52 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:52 INFO    status=CRITICAL score=55 cpu=7.0% mem=49.5% findings=3
+2026-10-08 10:57:52 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:52 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:52 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:54 WARNING ACTION [DRY-RUN] would run: systemctl restart rsyslog
+2026-10-08 10:57:54 INFO    status=CRITICAL score=55 cpu=7.7% mem=49.5% findings=3
+2026-10-08 10:57:54 WARNING finding [WARNING] network: Unexpected port 80 listening on all interfaces
+2026-10-08 10:57:54 WARNING finding [WARNING] network: Unexpected port 5355 listening on all interfaces
+2026-10-08 10:57:54 WARNING finding [CRITICAL] services: Service rsyslog is inactive
+2026-10-08 10:57:54 INFO    sysmon daemon stopped cleanly

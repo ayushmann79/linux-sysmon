@@ -1,0 +1,26 @@
+Oct  6 01:00:03 web01 nginx[812]: [error] 1000#0: *0 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:01:03 web01 nginx[812]: [error] 1001#0: *13 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:02:03 web01 nginx[812]: [error] 1002#0: *26 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:03:03 web01 nginx[812]: [error] 1003#0: *39 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:04:03 web01 nginx[812]: [error] 1004#0: *52 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:05:03 web01 nginx[812]: [error] 1005#0: *65 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:06:03 web01 nginx[812]: [error] 1006#0: *78 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:07:03 web01 nginx[812]: [error] 1007#0: *91 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 01:08:03 web01 nginx[812]: [error] 1008#0: *104 connect() failed (111: Connection refused) while connecting to upstream
+Oct  6 04:30:10 web01 systemd[1]: app.service: Failed with result 'exit-code'.
+Oct  6 04:31:10 web01 systemd[1]: app.service: Failed with result 'exit-code'.
+Oct  6 04:32:10 web01 systemd[1]: app.service: Failed with result 'exit-code'.
+Oct  6 04:33:10 web01 systemd[1]: app.service: Failed with result 'exit-code'.
+Oct  6 05:00:01 web01 kernel: [ 9921.123] Out of memory: Killed process 4471 (java) total-vm:4123456kB
+Oct  6 05:00:02 web01 kernel: [ 9921.200] oom-killer: gfp_mask=0x100cca(GFP_HIGHUSER_MOVABLE)
+Oct  6 07:00:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 0
+Oct  6 07:01:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 1
+Oct  6 07:02:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 2
+Oct  6 07:03:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 3
+Oct  6 07:04:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 4
+Oct  6 07:05:05 web01 cron[900]: (CRON) warning: timeout waiting for lock 5
+Oct  6 08:15:00 web01 sshd[1200]: error: maximum authentication attempts exceeded for root from 185.220.101.47 port 40012 ssh2
+Oct  6 08:16:00 web01 app[2200]: INFO request served in 12ms
+Oct  6 10:00:00 web01 kernel: [12000.000] EXT4-fs error (device sda1): ext4_find_entry:1455: I/O error
+Oct  6 11:00:00 web01 postgres[3000]: ERROR:  permission denied for table users
+Oct  6 11:00:01 web01 postgres[3000]: ERROR:  permission denied for table users

@@ -1,0 +1,233 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-10-08 10:57:39",
+  "host": "kali",
+  "info": {
+    "hostname": "kali",
+    "os": "Kali GNU/Linux Rolling",
+    "kernel": "7.0.12+kali-amd64",
+    "arch": "x86_64",
+    "cpu_model": "AMD Ryzen 5 5600H with Radeon Graphics",
+    "cpu_cores": 2,
+    "uptime_seconds": 616,
+    "uptime": "0h 10m",
+    "boot_time": "2026-10-08 10:47:21",
+    "logged_in_users": 2
+  },
+  "cpu": {
+    "percent": 24.1,
+    "user": 10.3,
+    "system": 13.8,
+    "iowait": 0.0,
+    "steal": 0.0,
+    "load1": 0.6474609375,
+    "load5": 0.64306640625,
+    "load15": 0.34130859375,
+    "load_per_core": 0.32,
+    "cores": 2
+  },
+  "memory": {
+    "total": 2064760832,
+    "available": 994222080,
+    "used": 1070538752,
+    "percent": 51.8,
+    "buffers_cache": 894963712,
+    "swap_total": 999993344,
+    "swap_used": 118784,
+    "swap_percent": 0.0
+  },
+  "disk": [
+    {
+      "device": "/dev/sda1",
+      "mount": "/",
+      "fstype": "ext4",
+      "total": 84053143552,
+      "used": 30726955008,
+      "avail": 49009467392,
+      "percent": 38.5,
+      "inode_percent": 12.1
+    }
+  ],
+  "network": {
+    "interfaces": [
+      {
+        "name": "eth0",
+        "state": "up",
+        "rx_total": 188914,
+        "tx_total": 9513,
+        "rx_rate": 0.0,
+        "tx_rate": 0.0,
+        "errors": 0,
+        "drops": 0
+      },
+      {
+        "name": "eth1",
+        "state": "up",
+        "rx_total": 12801,
+        "tx_total": 12722,
+        "rx_rate": 0.0,
+        "tx_rate": 0.0,
+        "errors": 0,
+        "drops": 0
+      },
+      {
+        "name": "docker0",
+        "state": "down",
+        "rx_total": 0,
+        "tx_total": 0,
+        "rx_rate": 0.0,
+        "tx_rate": 0.0,
+        "errors": 0,
+        "drops": 6
+      }
+    ],
+    "listening": [
+      {
+        "port": 22,
+        "scope": "all-interfaces"
+      },
+      {
+        "port": 53,
+        "scope": "specific"
+      },
+      {
+        "port": 80,
+        "scope": "all-interfaces"
+      },
+      {
+        "port": 5000,
+        "scope": "loopback"
+      },
+      {
+        "port": 5355,
+        "scope": "all-interfaces"
+      },
+      {
+        "port": 41797,
+        "scope": "loopback"
+      }
+    ]
+  },
+  "processes": {
+    "total": 200,
+    "running": 1,
+    "sleeping": 199,
+    "stopped": 0,
+    "zombies": [],
+    "top_cpu": [
+      {
+        "pid": 679,
+        "user": "root",
+        "cpu": 12.8,
+        "rss": 176730112,
+        "cmd": "/usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -noli"
+      },
+      {
+        "pid": 1483,
+        "user": "kali",
+        "cpu": 6.4,
+        "rss": 72929280,
+        "cmd": "xfdesktop"
+      },
+      {
+        "pid": 727,
+        "user": "root",
+        "cpu": 4.6,
+        "rss": 79687680,
+        "cmd": "/usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.soc"
+      },
+      {
+        "pid": 1,
+        "user": "root",
+        "cpu": 3.7,
+        "rss": 17653760,
+        "cmd": "/sbin/init splash"
+      },
+      {
+        "pid": 4784,
+        "user": "kali",
+        "cpu": 3.7,
+        "rss": 20103168,
+        "cmd": "/usr/libexec/glycin-loaders/2+/glycin-image-rs --dbus-fd 21"
+      }
+    ],
+    "top_mem": [
+      {
+        "pid": 679,
+        "user": "root",
+        "cpu": 12.8,
+        "rss": 176730112,
+        "cmd": "/usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -noli"
+      },
+      {
+        "pid": 1421,
+        "user": "kali",
+        "cpu": 0.9,
+        "rss": 141602816,
+        "cmd": "xfwm4"
+      },
+      {
+        "pid": 727,
+        "user": "root",
+        "cpu": 4.6,
+        "rss": 79687680,
+        "cmd": "/usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.soc"
+      },
+      {
+        "pid": 1483,
+        "user": "kali",
+        "cpu": 6.4,
+        "rss": 72929280,
+        "cmd": "xfdesktop"
+      },
+      {
+        "pid": 2223,
+        "user": "kali",
+        "cpu": 1.8,
+        "rss": 69066752,
+        "cmd": "/usr/bin/qterminal"
+      }
+    ]
+  },
+  "services": {
+    "available": true,
+    "units": [
+      {
+        "name": "ssh",
+        "active": "active",
+        "enabled": "enabled"
+      },
+      {
+        "name": "cron",
+        "active": "active",
+        "enabled": "enabled"
+      },
+      {
+        "name": "rsyslog",
+        "active": "inactive",
+        "enabled": "not-found"
+      }
+    ],
+    "failed": []
+  },
+  "findings": [
+    {
+      "level": "WARNING",
+      "component": "network",
+      "message": "Unexpected port 80 listening on all interfaces"
+    },
+    {
+      "level": "WARNING",
+      "component": "network",
+      "message": "Unexpected port 5355 listening on all interfaces"
+    },
+    {
+      "level": "CRITICAL",
+      "component": "services",
+      "message": "Service rsyslog is inactive"
+    }
+  ],
+  "status": "CRITICAL",
+  "score": 55,
+  "actions": []
+}

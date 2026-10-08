@@ -1,0 +1,17 @@
+SETTING                                CURRENT        STATUS
+permitrootlogin                        unset          DIFFERS (want no)
+passwordauthentication                 unset          DIFFERS (want no)
+pubkeyauthentication                   unset          DIFFERS (want yes)
+permitemptypasswords                   unset          DIFFERS (want no)
+challengeresponseauthentication        unset          DIFFERS (want no)
+maxauthtries                           unset          DIFFERS (want 3)
+logingracetime                         unset          DIFFERS (want 30)
+x11forwarding                          unset          DIFFERS (want no)
+allowagentforwarding                   unset          DIFFERS (want no)
+permituserenvironment                  unset          DIFFERS (want no)
+clientaliveinterval                    unset          DIFFERS (want 300)
+clientalivecountmax                    unset          DIFFERS (want 2)
+loglevel                               unset          DIFFERS (want VERBOSE)
+
+port: 22 
+13 setting(s) differ from the baseline.

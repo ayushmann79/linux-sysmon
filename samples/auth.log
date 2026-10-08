@@ -1,0 +1,85 @@
+Oct  6 02:10:00 web01 sshd[2001]: Invalid user postgres from 185.220.101.47 port 40000
+Oct  6 02:10:00 web01 sshd[2001]: Failed password for invalid user postgres from 185.220.101.47 port 40000 ssh2
+Oct  6 02:10:09 web01 sshd[2002]: Invalid user ubuntu from 185.220.101.47 port 40001
+Oct  6 02:10:09 web01 sshd[2002]: Failed password for invalid user ubuntu from 185.220.101.47 port 40001 ssh2
+Oct  6 02:10:18 web01 sshd[2003]: Invalid user user from 185.220.101.47 port 40002
+Oct  6 02:10:18 web01 sshd[2003]: Failed password for invalid user user from 185.220.101.47 port 40002 ssh2
+Oct  6 02:10:27 web01 sshd[2004]: Failed password for root from 185.220.101.47 port 40003 ssh2
+Oct  6 02:10:36 web01 sshd[2005]: Invalid user admin from 185.220.101.47 port 40004
+Oct  6 02:10:36 web01 sshd[2005]: Failed password for invalid user admin from 185.220.101.47 port 40004 ssh2
+Oct  6 02:10:45 web01 sshd[2006]: Invalid user admin from 185.220.101.47 port 40005
+Oct  6 02:10:45 web01 sshd[2006]: Failed password for invalid user admin from 185.220.101.47 port 40005 ssh2
+Oct  6 02:11:03 web01 sshd[2008]: Failed password for root from 185.220.101.47 port 40007 ssh2
+Oct  6 02:11:12 web01 sshd[2009]: Invalid user test from 185.220.101.47 port 40008
+Oct  6 02:11:12 web01 sshd[2009]: Failed password for invalid user test from 185.220.101.47 port 40008 ssh2
+Oct  6 02:11:21 web01 sshd[2010]: Failed password for root from 185.220.101.47 port 40009 ssh2
+Oct  6 02:11:30 web01 sshd[2011]: Invalid user admin from 185.220.101.47 port 40010
+Oct  6 02:11:30 web01 sshd[2011]: Failed password for invalid user admin from 185.220.101.47 port 40010 ssh2
+Oct  6 02:11:39 web01 sshd[2012]: Invalid user user from 185.220.101.47 port 40011
+Oct  6 02:11:39 web01 sshd[2012]: Failed password for invalid user user from 185.220.101.47 port 40011 ssh2
+Oct  6 02:11:54 web01 sshd[2007]: Invalid user postgres from 185.220.101.47 port 40006
+Oct  6 02:11:54 web01 sshd[2007]: Failed password for invalid user postgres from 185.220.101.47 port 40006 ssh2
+Oct  6 02:12:06 web01 sshd[2015]: Invalid user test from 185.220.101.47 port 40014
+Oct  6 02:12:06 web01 sshd[2015]: Failed password for invalid user test from 185.220.101.47 port 40014 ssh2
+Oct  6 02:12:15 web01 sshd[2016]: Invalid user admin from 185.220.101.47 port 40015
+Oct  6 02:12:15 web01 sshd[2016]: Failed password for invalid user admin from 185.220.101.47 port 40015 ssh2
+Oct  6 02:12:24 web01 sshd[2017]: Invalid user user from 185.220.101.47 port 40016
+Oct  6 02:12:24 web01 sshd[2017]: Failed password for invalid user user from 185.220.101.47 port 40016 ssh2
+Oct  6 02:12:33 web01 sshd[2018]: Failed password for root from 185.220.101.47 port 40017 ssh2
+Oct  6 02:12:48 web01 sshd[2013]: Invalid user user from 185.220.101.47 port 40012
+Oct  6 02:12:48 web01 sshd[2013]: Failed password for invalid user user from 185.220.101.47 port 40012 ssh2
+Oct  6 02:12:57 web01 sshd[2014]: Invalid user admin from 185.220.101.47 port 40013
+Oct  6 02:12:57 web01 sshd[2014]: Failed password for invalid user admin from 185.220.101.47 port 40013 ssh2
+Oct  6 02:13:00 web01 sshd[2021]: Failed password for root from 185.220.101.47 port 40020 ssh2
+Oct  6 02:13:09 web01 sshd[2022]: Invalid user user from 185.220.101.47 port 40021
+Oct  6 02:13:09 web01 sshd[2022]: Failed password for invalid user user from 185.220.101.47 port 40021 ssh2
+Oct  6 02:13:18 web01 sshd[2023]: Failed password for root from 185.220.101.47 port 40022 ssh2
+Oct  6 02:13:27 web01 sshd[2024]: Invalid user test from 185.220.101.47 port 40023
+Oct  6 02:13:27 web01 sshd[2024]: Failed password for invalid user test from 185.220.101.47 port 40023 ssh2
+Oct  6 02:13:42 web01 sshd[2019]: Invalid user admin from 185.220.101.47 port 40018
+Oct  6 02:13:42 web01 sshd[2019]: Failed password for invalid user admin from 185.220.101.47 port 40018 ssh2
+Oct  6 02:13:51 web01 sshd[2020]: Invalid user test from 185.220.101.47 port 40019
+Oct  6 02:13:51 web01 sshd[2020]: Failed password for invalid user test from 185.220.101.47 port 40019 ssh2
+Oct  6 02:14:03 web01 sshd[2028]: Invalid user user from 185.220.101.47 port 40027
+Oct  6 02:14:03 web01 sshd[2028]: Failed password for invalid user user from 185.220.101.47 port 40027 ssh2
+Oct  6 02:14:12 web01 sshd[2029]: Invalid user ubuntu from 185.220.101.47 port 40028
+Oct  6 02:14:12 web01 sshd[2029]: Failed password for invalid user ubuntu from 185.220.101.47 port 40028 ssh2
+Oct  6 02:14:21 web01 sshd[2030]: Invalid user admin from 185.220.101.47 port 40029
+Oct  6 02:14:21 web01 sshd[2030]: Failed password for invalid user admin from 185.220.101.47 port 40029 ssh2
+Oct  6 02:14:36 web01 sshd[2025]: Failed password for root from 185.220.101.47 port 40024 ssh2
+Oct  6 02:14:45 web01 sshd[2026]: Invalid user ubuntu from 185.220.101.47 port 40025
+Oct  6 02:14:45 web01 sshd[2026]: Failed password for invalid user ubuntu from 185.220.101.47 port 40025 ssh2
+Oct  6 02:14:54 web01 sshd[2027]: Invalid user oracle from 185.220.101.47 port 40026
+Oct  6 02:14:54 web01 sshd[2027]: Failed password for invalid user oracle from 185.220.101.47 port 40026 ssh2
+Oct  6 02:15:30 web01 sshd[2031]: Invalid user oracle from 185.220.101.47 port 40030
+Oct  6 02:15:30 web01 sshd[2031]: Failed password for invalid user oracle from 185.220.101.47 port 40030 ssh2
+Oct  6 02:15:39 web01 sshd[2032]: Invalid user ubuntu from 185.220.101.47 port 40031
+Oct  6 02:15:39 web01 sshd[2032]: Failed password for invalid user ubuntu from 185.220.101.47 port 40031 ssh2
+Oct  6 02:15:48 web01 sshd[2033]: Invalid user admin from 185.220.101.47 port 40032
+Oct  6 02:15:48 web01 sshd[2033]: Failed password for invalid user admin from 185.220.101.47 port 40032 ssh2
+Oct  6 02:15:57 web01 sshd[2034]: Invalid user test from 185.220.101.47 port 40033
+Oct  6 02:15:57 web01 sshd[2034]: Failed password for invalid user test from 185.220.101.47 port 40033 ssh2
+Oct  6 03:05:00 web01 sshd[2035]: Failed password for root from 103.77.12.9 port 51000 ssh2
+Oct  6 03:06:17 web01 sshd[2036]: Failed password for root from 103.77.12.9 port 51001 ssh2
+Oct  6 03:07:34 web01 sshd[2037]: Failed password for root from 103.77.12.9 port 51002 ssh2
+Oct  6 03:08:51 web01 sshd[2038]: Failed password for root from 103.77.12.9 port 51003 ssh2
+Oct  6 03:09:08 web01 sshd[2039]: Failed password for root from 103.77.12.9 port 51004 ssh2
+Oct  6 03:10:25 web01 sshd[2040]: Failed password for root from 103.77.12.9 port 51005 ssh2
+Oct  6 03:11:42 web01 sshd[2041]: Failed password for root from 103.77.12.9 port 51006 ssh2
+Oct  6 03:12:59 web01 sshd[2042]: Failed password for root from 103.77.12.9 port 51007 ssh2
+Oct  6 03:13:16 web01 sshd[2043]: Failed password for root from 103.77.12.9 port 51008 ssh2
+Oct  6 03:14:33 web01 sshd[2044]: Failed password for root from 103.77.12.9 port 51009 ssh2
+Oct  6 03:15:50 web01 sshd[2045]: Failed password for root from 103.77.12.9 port 51010 ssh2
+Oct  6 03:16:07 web01 sshd[2046]: Failed password for root from 103.77.12.9 port 51011 ssh2
+Oct  6 09:01:12 web01 sshd[3100]: Accepted publickey for ayush from 203.0.113.10 port 50122 ssh2: ED25519 SHA256:abc
+Oct  6 09:10:00 web01 sudo:    ayush : TTY=pts/0 ; PWD=/home/ayush ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct  6 09:10:00 web01 sudo:    ayush : TTY=pts/0 ; PWD=/home/ayush ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct  6 09:10:00 web01 sudo:    ayush : TTY=pts/0 ; PWD=/home/ayush ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct  6 09:10:00 web01 sudo:    ayush : TTY=pts/0 ; PWD=/home/ayush ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+Oct  6 09:40:03 web01 sshd[3150]: Accepted publickey for deploy from 203.0.113.55 port 50990 ssh2: ED25519 SHA256:def
+Oct  6 14:22:00 web01 sshd[2047]: Failed password for deploy from 198.51.100.23 port 52000 ssh2
+Oct  6 14:22:07 web01 sshd[2048]: Failed password for deploy from 198.51.100.23 port 52001 ssh2
+Oct  6 14:22:14 web01 sshd[2049]: Failed password for deploy from 198.51.100.23 port 52002 ssh2
+Oct  6 16:02:44 web01 sshd[3300]: Failed password for ayush from 203.0.113.10 port 50300 ssh2
+Oct  6 16:02:49 web01 sshd[3300]: Accepted password for ayush from 203.0.113.10 port 50300 ssh2
+Oct  6 16:05:01 web01 sudo: pam_unix(sudo:auth): authentication failure; logname=deploy uid=1001 euid=0 tty=/dev/pts/1 ruser=deploy rhost=  user=deploy

@@ -1,0 +1,57 @@
+==========================================================================
+ SYSMON HEALTH REPORT   host=kali   2026-10-08 10:57:38
+==========================================================================
+ Overall status : CRITICAL    Health score : 55/100
+
+-- SYSTEM ----------------------------------------------------------------
+  OS        : Kali GNU/Linux Rolling   kernel 7.0.12+kali-amd64 (x86_64)
+  CPU       : AMD Ryzen 5 5600H with Radeon Graphics x2
+  Uptime    : 0h 10m (booted 2026-10-08 10:47:21)   users logged in: 2
+
+-- CPU -------------------------------------------------------------------
+  Usage     : [####................] 21.0%   (user 7.3% sys 13.7% iowait 0.5% steal 0.0%)
+  Load avg  : 0.65 0.64 0.34   per core (1m): 0.32  cores: 2
+
+-- MEMORY ----------------------------------------------------------------
+  RAM       : [##########..........] 51.4%   1012.9 MB used / 1.9 GB  (available 956.2 MB)
+  Swap      : [....................] 0.0%   116.0 KB / 953.7 MB
+
+-- DISK ------------------------------------------------------------------
+  MOUNT                 FS        USED%  USAGE                         SIZE  INODE%
+  /                     ext4       38.5  [########............]     78.3 GB   12.1
+
+-- NETWORK ---------------------------------------------------------------
+  eth0      up       rx   184.5 KB (0 B/s)  tx     9.3 KB (0 B/s)  err 0 drop 0
+  eth1      up       rx    12.5 KB (0 B/s)  tx    12.4 KB (0 B/s)  err 0 drop 0
+  docker0   down     rx        0 B (0 B/s)  tx        0 B (0 B/s)  err 0 drop 6
+  Listening : 22(all-interfaces), 53(specific), 80(all-interfaces), 5000(loopback), 5355(all-interfaces), 41797(loopback)
+
+-- PROCESSES -------------------------------------------------------------
+  total 200  running 1  sleeping 199  stopped 0  zombies 0
+      PID USER        CPU%        MEM  COMMAND (top by CPU)
+      679 root        10.8   168.5 MB  /usr/lib/xorg/Xorg :0 -seat seat0 -a
+     1483 kali         5.4    69.6 MB  xfdesktop
+     4784 kali         4.5    19.2 MB  /usr/libexec/glycin-loaders/2+/glyci
+        1 root         3.6    16.8 MB  /sbin/init splash
+       52 root         2.7        0 B  [kdamond.0]
+      PID USER        CPU%        MEM  COMMAND (top by memory)
+      679 root        10.8   168.5 MB  /usr/lib/xorg/Xorg :0 -seat seat0 -a
+     1421 kali         0.0   135.0 MB  xfwm4
+      727 root         0.0    76.0 MB  /usr/sbin/dockerd -H fd:// --contain
+     1483 kali         5.4    69.6 MB  xfdesktop
+     2223 kali         0.9    65.9 MB  /usr/bin/qterminal
+
+-- SERVICES --------------------------------------------------------------
+  ssh               active     enabled=enabled
+  cron              active     enabled=enabled
+  rsyslog           inactive   enabled=not-found
+  failed units: none
+
+-- FINDINGS --------------------------------------------------------------
+  [WARNING] network: Unexpected port 80 listening on all interfaces
+  [WARNING] network: Unexpected port 5355 listening on all interfaces
+  [CRITICAL] services: Service rsyslog is inactive
+
+-- AUTOMATED ACTIONS -----------------------------------------------------
+  [DRY-RUN] would run: systemctl restart rsyslog
+==========================================================================
