@@ -84,7 +84,6 @@ linux-sysmon/
 
 ## 4. Quick start
 
-### Try it without installing anything (recommended first step)
 
 ```bash
 cd linux-sysmon
@@ -567,9 +566,6 @@ Tested in a real Linux VM (Ubuntu 24.04, running as root):
 
 Push alerts (email/webhook) from the actions step · Prometheus text-format exporter from `latest.json` · per-process memory-leak trend from `history.jsonl` · nftables rules generated from the blocklist · split the agent into unprivileged monitor + privileged helper · unit tests with fixture copies of `/proc` files.
 
-## 13. How to explain it in an interview (30 seconds)
-
-> "I built a monitoring agent in Python that reads `/proc` directly — CPU from two `/proc/stat` samples, memory from `MemAvailable`, disk from `statvfs` including inodes. It turns that into a health score, and it can safely act: restart a dead service with a cooldown, or clean old temp files when a disk goes critical — dry-run by default. Around it are the operations scripts: verified backups with restore tests, a log analyzer that finds SSH brute-force sources, user and permission audits, and an SSH hardening tool that validates with `sshd -t` and can't lock you out. It runs as a sandboxed systemd service with cron for the periodic jobs."
 
 ## License
 MIT — use it, modify it, put it on your GitHub.
